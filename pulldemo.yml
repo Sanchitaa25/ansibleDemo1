@@ -1,14 +1,8 @@
 ---
 - name: Hello World Playbook
-  hosts: all
-  become: yes
+  hosts: localhost
 
   tasks:
-
-    - name: Print Hello World
+    - name: Print message
       debug:
-        msg: "Hello World from Ubuntu"
-
-    - name: Update apt packages
-      apt:
-        update_cache: yes
+        msg: "Hello, World!"
